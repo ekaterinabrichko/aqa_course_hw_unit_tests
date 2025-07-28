@@ -11,6 +11,7 @@ const item_4 = 'Hello World';
 console.log(item_4);
 
 console.log(item_3 + item_4);
+console.log(item_3 * item_4);
 
 let item_5 = item_3;
 
