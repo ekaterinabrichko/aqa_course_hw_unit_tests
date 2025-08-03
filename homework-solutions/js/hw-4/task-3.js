@@ -10,8 +10,9 @@
   const maxAge = 60;
   let age = "zoom";
   age = +age;
+  console.log(age);
 
-  if (typeof age !== 'number') {
+  if (age !== NaN || typeof age !== 'number') {
     console.log('Incorrect data type');
   } else if (age < minAge) {
     console.log("You don't have access cause your age is " + age + " It's less than " + minAge);
