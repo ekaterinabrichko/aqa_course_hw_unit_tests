@@ -8,11 +8,11 @@
 */
   const minAge = 18;
   const maxAge = 60;
-  let age = "zoom";
+  let age = "61";
   age = +age;
   console.log(age);
 
-  if (age !== NaN || typeof age !== 'number') {
+  if (typeof age !== 'number' || isNaN(age)) {
     console.log('Incorrect data type');
   } else if (age < minAge) {
     console.log("You don't have access cause your age is " + age + " It's less than " + minAge);
