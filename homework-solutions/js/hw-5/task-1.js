@@ -6,10 +6,14 @@
  */
 
 let evenNumbersResult = '';
-evenNumbersResult = 10;
 
-for (let i = 8; i >= 0; i -= 2) {
-    evenNumbersResult += `-${i}`;
+for (let i = 10; i >= 0; i -= 2) {
+    if (evenNumbersResult === '') {
+        evenNumbersResult += `${i}`;
+    } else {
+        evenNumbersResult += `-${i}`;
+    }
+    
 }
 
 console.log(evenNumbersResult);
@@ -31,7 +35,12 @@ let tmp = '';
 
 for (let i = 1; i <= 5; i++) {
     tmp += ':)';
-    smilePatternResult += tmp + '\n';
+    smilePatternResult += tmp;
+
+    if (i < 5) {
+            smilePatternResult += '\n';
+        }
+
     }
 
 console.log(smilePatternResult);
@@ -47,4 +56,4 @@ let replaceSpacesWithOneResult = '';
 replaceSpacesWithOneResult = text.replaceAll(' ', "1");
 console.log(replaceSpacesWithOneResult);
 
-// export { evenNumbersResult, smilePatternResult, replaceSpacesWithOneResult };
+export { evenNumbersResult, smilePatternResult, replaceSpacesWithOneResult };

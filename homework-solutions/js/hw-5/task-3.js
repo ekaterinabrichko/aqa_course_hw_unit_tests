@@ -7,13 +7,16 @@ const word = 'hello';
 lengthWord = word.length;
 splitWord = word.split('');
 console.log(splitWord);
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+const consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z'];
 let vowelsNum = 0;
 let consonantsNum = 0;
 
+
 for (i = 0; i < lengthWord; i++) {
-    if (splitWord[i] === 'a' || splitWord[i] === 'e' || splitWord[i] === 'i' || splitWord[i] === 'o' || splitWord[i] === 'u') {
+    if (vowels.includes(splitWord[i])) {
         vowelsNum++;
-    } else {
+    } else if (consonants.includes(splitWord[i])) {
         consonantsNum++;
     }
 }
@@ -21,4 +24,4 @@ for (i = 0; i < lengthWord; i++) {
 let vowelsAndConsonantsResult = `${word} contains ${vowelsNum} vowels and ${consonantsNum} consonants`;
 console.log(vowelsAndConsonantsResult);
 
-// export { vowelsAndConsonantsResult };
+export { vowelsAndConsonantsResult };
