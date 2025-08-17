@@ -53,8 +53,8 @@ console.log(result);
 
 const arr3 = [3, 11, 32, 7, 20];
 
-const [first, second] = arr3;
-const rest = arr3.slice(2, 5);
+const [first, second, ...rest] = arr3;
+
 
 console.log('first ===', first);
 console.log('second ===', second);
