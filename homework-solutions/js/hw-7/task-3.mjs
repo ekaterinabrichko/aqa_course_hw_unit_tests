@@ -9,7 +9,7 @@
 */
 
 function digitalRoot(number) {
-  // Ваш код
+  // скипнула
 }
 
 export { digitalRoot };
